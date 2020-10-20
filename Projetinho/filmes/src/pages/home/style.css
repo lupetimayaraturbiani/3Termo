@@ -1,0 +1,28 @@
+.conteudo {
+    display: inline-block;
+}
+
+.teatro{
+    float: right;
+    margin-left:  170px;
+    margin-top: 70px;
+}
+
+.cinema{
+    float: left;
+    margin-left:  170px;
+    margin-top: 70px;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.categoria-text{
+    padding-bottom: 50px;
+}
+
+.home{
+    font-size: 14px;
+}

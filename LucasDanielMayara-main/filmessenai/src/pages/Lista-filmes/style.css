@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    padding-left: 200px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+th, td{
+    padding: 6px;
+}
+
+.filmes img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.icon{
+    margin-left: 50px;
+}
+
+.icon1{
+    margin-left: 48px;
+}
+
+.btn{
+    margin-top: 20px;
+}

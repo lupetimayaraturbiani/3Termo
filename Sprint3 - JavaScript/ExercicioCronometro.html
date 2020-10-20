@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entendo o DOM (Document Object Model)</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1><time id="timer">00:00:00</time></h1>
+        <button onclick="Start()" id="Start">Start</button>
+        <button onclick="Stop()" id="Stop">Stop</button>
+        <button onclick="Reset()" id="Reset">Reset</button>
+    </div>
+</body>
+
+<script>
+    type="text/java"
+
+    var totalSeconds = 0;
+    var timerVar;
+    var running = false;
+
+    function countTimer() {
+        ++totalSeconds;
+        var hour = Math.floor(totalSeconds / 3600);
+        var minute = Math.floor((totalSeconds - hour * 3600) / 60);
+        var seconds = totalSeconds - (hour * 3600 + minute * 60);
+
+        if (hour < 10) { hour = "0" + hour; }
+        if (minute < 10) { minute = "0" + minute; }
+        if (seconds < 10) { seconds = "0" + seconds; }
+
+        var x = hour + ":" + minute + ":" + seconds;
+        document.getElementById("timer").innerHTML = x;
+    }
+
+    function Start() {
+        if (!running) {
+            running = true;
+            countTimer();
+            timerVar = setInterval(countTimer, 1000);
+        }
+    }
+
+    function Stop() {
+        running = false;
+        clearInterval(timerVar);
+    }
+
+    function Reset() {
+        running = false;
+        clearInterval(timerVar);
+        hour = 0;
+        minute = 0;
+        seconds = 0;
+        totalSeconds = 0;
+        document.getElementById('timer').innerHTML = '00:00:00';
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.filmes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.filmes h1{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+.filmes img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 90px;
+    height: 100px;
+}
+
+

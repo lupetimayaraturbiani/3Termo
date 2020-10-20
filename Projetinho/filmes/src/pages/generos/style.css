@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    padding-left: 200px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+th, td{
+    padding: 6px;
+}
+
+
+.imgTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

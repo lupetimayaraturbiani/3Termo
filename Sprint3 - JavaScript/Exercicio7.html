@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Aula de JavaScript</title>
+</head>
+
+<body>
+    <p>Clique para exibir.</p>
+    <button onclick="myFunction()">Clique aqui</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() 
+        {
+            var x;
+            var gas = parseInt(prompt("Digite o valor da gasolina."));
+            var alc = parseInt(prompt("Digite o valor do álcool."));
+            if (alc <= (gas * 0.7)) {
+                x = "Álcool é mais vantajoso.";
+            } else {
+                x = "Gasolina é mais vantajoso.";
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

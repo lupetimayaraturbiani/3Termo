@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Aula de Java</title>
+</head>
+
+<body>
+    <p>Clique para exibir.</p>
+    <button onclick="myFunction()">Clique aqui para calcular a média</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        
+        function myFunction() {
+            var x;
+
+            var n = parseInt(prompt("Digite a primeira nota:"));
+            if (n != null) {
+                x = "Nota primeiro bimestre: " + n;
+                document.getElementById("demo1").innerHTML = x;
+            }
+
+            var n2 = parseInt(prompt("Digite a segunta nota:"));
+            if (n2 != null) {
+                x = "Nota segundo bimestre: " + n2;
+                document.getElementById("demo2").innerHTML = x;
+            }
+
+            var n3 = parseInt(prompt("Digite a terceira nota:"));
+            if (n3 != null) {
+                x = "Nota terceiro bimestre: " + n3;
+                document.getElementById("demo3").innerHTML = x;
+            }
+
+            var n4 = parseInt(prompt("Digite a quarta nota:"));
+            if (n4 != null) {
+                x = "Nota quarto bimestre: " + n4;
+                document.getElementById("demo4").innerHTML = x;
+            }
+
+
+            var media = (n + n2 + n3 + n4) / 4;
+            if (media != null) {
+                x = "A média é: " + media;
+                document.getElementById("demo5").innerHTML = x;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entendo o DOM (Document Object Model)</title>
+</head>
+
+<body>
+    <h1>Biblioteca</h1>
+    <form onsubmit="adicionaLivro()">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="lname">Genero</label><br>
+        <input type="text" id="genero" name="genero"><br>
+        <label for="lname">Autor</label><br>
+        <input type="text" id="autor" name="autor"><br>
+        <label for="lname">Editora</label><br>
+        <input type="text" id="editora" name="editora"><br>
+        <label for="lname">Ano de Lançamento</label><br>
+        <input type="date" id="anoLancamento" name="anoLancamento"><br>
+        <label for="lname">Quantidade de Páginas</label><br>
+        <input type="text" id="qntPaginas" name="qntPaginas"><br>
+        <label for="lname">Preço</label><br>
+        <input type="text" id="preço" name="preco"><br>
+        <br>
+        <input type="submit" id="submit" name="submit">
+    </form>
+</body>
+<script>
+    var Livro = {
+        nome: "",
+        genero: "",
+        autor: "",
+        editora: "",
+        anoLancamento: "",
+        qntPaginas: 0,
+        preco: 0
+    };
+
+    var Livros = [];
+
+    function adicionaLivro() {
+        Livro.nome = document.getElementById("nome").value;
+        Livro.genero = document.getElementById("genero").value;
+        Livro.autor = document.getElementById("autor").value;
+        Livro.editora = document.getElementById("editora").value;
+        Livro.anoLancamento = document.getElementById("anoLancamento").value;
+        Livro.qntPaginas = document.getElementById("qntPaginas").value;
+        Livro.preco = document.getElementById("preco")
+
+        Livros.push(Livro);
+        console.log(Livros);
+    }
+
+</script>
+</html>

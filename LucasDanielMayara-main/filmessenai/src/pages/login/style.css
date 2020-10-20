@@ -1,0 +1,36 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.login h1{
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 45px;
+}
+
+.login Input{
+    border: 1px black solid;
+    height: 40px;
+    width: 350px;
+}
+
+.login .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    padding-bottom: 35px;
+}
+
+.senha{
+    padding-bottom: 35px;
+}
+
+
+
